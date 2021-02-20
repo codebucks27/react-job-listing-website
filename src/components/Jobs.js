@@ -17,7 +17,7 @@ const Jobs = ({ data, setKeywords, keywords }) => {
   // };
 
   const modifiedData = () => {
-    if (keywords.length > 0) {
+      if (keywords) {
       const newData = data.filter((d) => {
         return keywords.every((key) => {
           return (

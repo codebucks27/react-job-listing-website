@@ -5,7 +5,7 @@ import Header from "./components/Header";
 import Search from "./components/Search";
 
 function App() {
-  const [filterKeywords, setfilterKeywords] = useState("");
+  const [filterKeywords, setfilterKeywords] = useState([]);
 
   // const setSearchKeyword = (data) => {
   //   setfilterKeywords(data);

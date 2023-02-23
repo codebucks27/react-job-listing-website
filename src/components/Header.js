@@ -15,7 +15,7 @@ const Header = ({ keywords, removeKeywords, clearAll }) => {
             </li>
           );
         })}
-        <a href="#" onClick={() => clearAll()}>
+        <a href="/#" onClick={() => clearAll()}>
           Clear
         </a>
       </ul>

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Job from "./Job";
 
 const Jobs = ({ data, setKeywords, keywords }) => {
-  console.log(data);
+  // console.log(data);
   const [filteredData, setfilteredData] = useState([]);
 
   // const SearchFunc = () => {

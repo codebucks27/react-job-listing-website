@@ -79,6 +79,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
+## Dependency upgrade
+
+The app now uses React 19.3, Vite 8.3, Bun 1.4, and updated Sass, web-vitals, and Testing Library dependencies, with Vitest/jsdom tests and ESLint 10. Use Node 24.15+ and Bun 1.4.2: `bun install --frozen-lockfile`, `bun start` (or `bun run dev`, on port 3000), `bun run build`, `bun run preview`, `bun run lint`, and `bun run test` (`bun run test:watch` for watch mode). Vite replaces `react-scripts`/eject; JSX files use `.jsx`, logos use Vite asset imports, Sass uses `@use`, and web-vitals uses `on*` callbacks with INP replacing FID. Browserslist targets are retained for JavaScript and CSS. The single `bun.lock` replaces the npm lockfile, and production output remains `build/`, matching `vercel.json`. The original CRA instructions above are retained for tutorial history.
+
 ## Other project
 
 From the creator: SmartHeadshots offers [AI headshots for LinkedIn](https://www.smartheadshots.ai/linkedin-headshots) as an optional choice for a career profile photo.

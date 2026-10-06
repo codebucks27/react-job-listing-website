@@ -1,9 +1,7 @@
-import React, { useEffect, useState } from "react";
-import Job from "./Job";
+import Job from "./Job.jsx";
 
 const Jobs = ({ data, setKeywords, keywords }) => {
   // console.log(data);
-  const [filteredData, setfilteredData] = useState([]);
 
   // const SearchFunc = () => {
   //   if (keywords.length > 0) {
@@ -16,28 +14,17 @@ const Jobs = ({ data, setKeywords, keywords }) => {
   //   }
   // };
 
-  const modifiedData = () => {
-      if (keywords) {
-      const newData = data.filter((d) => {
-        return keywords.every((key) => {
-          return (
+  const filteredData = keywords
+    ? data.filter((d) =>
+        keywords.every(
+          (key) =>
             d.role === key ||
             d.level === key ||
             d.languages.includes(key) ||
             d.tools.includes(key)
-          );
-        });
-      });
-      setfilteredData(newData);
-    } else {
-      setfilteredData(data);
-    }
-  };
-
-  useEffect(() => {
-    modifiedData();
-    // SearchFunc();
-  }, [keywords]);
+        )
+      )
+    : data;
 
   return (
     <div className="jobs">

@@ -1,11 +1,14 @@
-import React, { useEffect, useState } from "react";
+const logos = import.meta.glob("./images/*.svg", {
+  eager: true,
+  query: "?url",
+  import: "default",
+});
 
 const Job = (props) => {
   const {
     company,
     contract,
     featured,
-    id,
     languages,
     level,
     location,
@@ -17,19 +20,8 @@ const Job = (props) => {
     tools,
   } = props.data;
 
-  let keywords = [role, level, ...languages, ...tools];
-
-  const [icon, setIcon] = useState("");
-
-  const importSvgs = () => {
-    const logoSvg = import(`${logo}`).then((d) => {
-      setIcon(d.default);
-    });
-  };
-
-  useEffect(() => {
-    importSvgs();
-  }, [logo]);
+  const keywords = [role, level, ...languages, ...tools];
+  const icon = logos[logo];
 
   return (
     <div

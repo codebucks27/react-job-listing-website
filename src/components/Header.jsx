@@ -1,4 +1,3 @@
-import React from "react";
 import close from "./images/icon-remove.svg";
 
 const Header = ({ keywords, removeKeywords, clearAll }) => {

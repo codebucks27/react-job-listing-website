@@ -5,11 +5,6 @@
   margin-top: calc(2vw + -4rem);
 
   ul {
-    @media only screen and (max-width: 375px) {
-      flex-wrap: wrap;
-      margin-bottom: 1rem;
-    }
-
     width: 70vw;
     background-color: #fff;
 
@@ -26,6 +21,11 @@
     margin-bottom: -2rem;
 
     position: relative;
+
+    @media only screen and (max-width: 375px) {
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+    }
 
     li {
       list-style: none;

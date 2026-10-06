@@ -1,5 +1,3 @@
-import React from "react";
-
 const Search = ({ setSearchKeyword }) => {
   return (
     <div className="header-container">

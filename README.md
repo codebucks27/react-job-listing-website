@@ -86,3 +86,5 @@ The app now uses React 19.3, Vite 8.3, Bun 1.4, and updated Sass, web-vitals, an
 ## Other project
 
 From the creator: SmartHeadshots offers [AI headshots for LinkedIn](https://www.smartheadshots.ai/linkedin-headshots) as an optional choice for a career profile photo.
+
+My other hosted project is [AI Room Design App — redesign your room with AI](https://www.airoomdesignapp.com).
